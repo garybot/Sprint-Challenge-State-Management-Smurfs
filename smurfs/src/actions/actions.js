@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export const getSmurfs = data => dispatch => {
-  console.log("ACTION!")
   axios
     .get(`http://localhost:3333/smurfs`)
     .then(res => {
@@ -13,7 +12,6 @@ export const getSmurfs = data => dispatch => {
 }
 
 export const addSmurf = data => dispatch => {
-  console.log("addSmurf: data", data);
   axios
     .post(`http://localhost:3333/smurfs`, data)
     .then(res => {
