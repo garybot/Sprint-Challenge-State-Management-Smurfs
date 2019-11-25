@@ -36,7 +36,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
-  redux-thunk allows us to handle asynchronous operations.
+  redux-thunk allows us to handle asynchronous operations, to work with apis specifically, so far.
 
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
 
