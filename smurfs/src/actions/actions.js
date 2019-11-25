@@ -23,3 +23,14 @@ export const addSmurf = data => dispatch => {
       dispatch({type: "POST_FAILURE", payload: err.response})
     })
 }
+
+export const removeSmurf = data => dispatch => {
+  axios
+    .delete(`http://localhost:3333/smurfs/${data}`)
+    .then(res => {
+      dispatch({type: "CALL_SUCCESS", payload: res.data});
+    })
+    .catch(err => {
+      dispatch({type: "CALL_FAILURE", payload: err.response})
+    });
+}

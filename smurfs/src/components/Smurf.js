@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { removeSmurf } from '../actions/actions.js';
 
 const Smurf = (props) => {
   const smurf = props.smurf;
@@ -7,8 +9,9 @@ const Smurf = (props) => {
       <h3>{smurf.name}</h3>
       <p>Age: {smurf.age}</p>
       <p>Height: {smurf.height}</p>
+      <button onClick={() => {props.removeSmurf(props.smurf.id)}} >Remove Smurf From Village</button>
     </div>
   )
 }
 
-export default Smurf;
+export default connect(()=>({}), {removeSmurf})(Smurf);
