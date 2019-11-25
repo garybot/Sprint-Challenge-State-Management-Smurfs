@@ -6,8 +6,7 @@ const SmurfForm = (props) => {
   const [newSmurf, setNewSmurf] = useState({
     name: "",
     age: 0,
-    height: "",
-    id: props.id
+    height: ""
   })
   const handleChange = (evt) => {
     setNewSmurf({...newSmurf, [evt.target.name]: evt.target.value})
