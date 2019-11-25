@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+export const CALL_SUCCESS = "CALL_SUCCESS";
+export const CALL_FAILURE = "CALL_FAILURE";
+export const POST_SUCCESS = "POST_SUCCESS";
+export const POST_FAILURE = "POST_FAILURE";
+
 export const getSmurfs = data => dispatch => {
   axios
     .get(`http://localhost:3333/smurfs`)
