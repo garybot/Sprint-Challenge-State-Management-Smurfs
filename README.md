@@ -23,10 +23,24 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+  It helps to provide state to various contexts within an app, without having to drill any props
+  .
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+  The store is where all of the data needed to run a react/redux application. Actions are ways you can act on that store in order to update it. Reducers manage actions and rebuild the store. The store has is know as a 'single source of truth' because it is immutable, and it should hold all of the apllication state data. 
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+  Application state refers to data that might be used across an application, in a variety of contexts. Component state refers to data that can/will be used be one component or any of its child components or their child components.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+  redux-thunk allows us to handle asynchronous operations, to work with apis specifically, so far.
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+  I feel like I'll need a lot more experiece with each of them to have a favorite. I think the idea of there being definite contexts in an application could be usefull/intuitive, so Context API is standing out right now. Then again, Redux having a single store that can be connected anywhere seems powerful.
 
 ## Project Set Up
 
